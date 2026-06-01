@@ -1,0 +1,123 @@
+/* Estilos específicos de index.html - página de bienvenida */
+body {
+    background-color: #c2d2e9;
+}
+
+.logo-principal {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logo-principal img {
+    border-radius: 30px;
+    height: 150px;
+    width: 200px;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 50px;
+    color: #091d36;
+    margin-top: 10px;
+}
+
+.subtitulo-principal {
+    text-align: center;
+    color: #3a4e7a;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-login {
+    width: 120px;
+    height: 50px;
+    background-color: #3a4e7a;
+    color: #f1f1f0;
+    border: 1px solid #091d36;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-login:hover {
+    background-color: #091d36;
+    transform: scale(1.08);
+}
+
+.btn-registro {
+    width: 120px;
+    height: 50px;
+    background-color: #f1f1f0;
+    color: #091d36;
+    border: 1px solid #091d36;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-registro:hover {
+    background-color: #c2d2e9;
+    transform: scale(1.08);
+}
+
+.btn-login,
+.btn-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 150px;
+    height: 40px;
+}
+
+.gift-cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 260px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f1f1f0;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.card h2 {
+    color: #091d36;
+    font-size: 18px;
+}
+
+.card p {
+    color: #3a4e7a;
+    font-size: 15px;
+}
+
+.frecuencia {
+    text-align: center;
+    margin-top: 30px;
+}

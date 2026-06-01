@@ -1,0 +1,122 @@
+/* Estilos específicos de foros.html */
+
+.contenedor-foros {
+    width: 84%;
+    margin: 35px auto;
+}
+
+.titulo-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-seccion h1 {
+    color: #0f2b50;
+    font-size: 32px;
+    text-align: left;
+}
+
+.btn-nuevo {
+    background: #324d82;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-nuevo:hover {
+    background: #091d36;
+}
+
+.buscador {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-top: 25px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.buscador input {
+    width: 97%;
+    padding: 15px;
+    border: 1px solid #c8d2e2;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.menu-filtro {
+    margin-top: 20px;
+}
+
+.menu-filtro button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.menu-filtro button:hover {
+    background: #3a4e7a;
+    color: white;
+}
+
+.btn-activo {
+    background: #324d82;
+    color: white;
+}
+
+.btn-inactivo {
+    background: #dbe6f5;
+}
+
+.tema {
+    background: white;
+    border: 2px solid #5b7db6;
+    border-radius: 18px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.tema img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.tema-contenido {
+    display: inline-block;
+    width: 90%;
+    margin-left: 15px;
+}
+
+.btn-etiqueta {
+    background: #dbe6f5;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+.tema-contenido h2 {
+    margin-top: 15px;
+    color: #0f2b50;
+    font-size: 18px;
+}
+
+.tema-contenido p {
+    color: #4d5d78;
+    font-size: 14px;
+}
+
+.tema-meta {
+    color: #5a78a5;
+    font-size: 13px;
+}

@@ -1,0 +1,168 @@
+/* Estilos específicos de grupos.html */
+
+.contenedor-grupos {
+    width: 82%;
+    margin: 40px auto;
+}
+
+.titulo-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-seccion h1 {
+    color: #0f2b50;
+    font-size: 32px;
+    text-align: left;
+}
+
+.btn-crear {
+    background: #324d82;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-crear:hover {
+    background: #091d36;
+}
+
+.buscador {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-top: 25px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.buscador input {
+    width: 97%;
+    padding: 15px;
+    border: 1px solid #c8d2e2;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.menu-filtro {
+    margin-top: 20px;
+}
+
+.menu-filtro button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.menu-filtro button:hover {
+    background: #3a4e7a;
+    color: white;
+}
+
+.btn-activo {
+    background: #324d82;
+    color: white;
+}
+
+.btn-inactivo {
+    background: #dbe6f5;
+    color: #1f2d4d;
+}
+
+.tarjetas {
+    margin-top: 30px;
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.card-grupo {
+    display: inline-block;
+    width: 31%;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.card-banner {
+    height: 140px;
+    border-radius: 18px 18px 0 0;
+}
+
+.card-banner-1 {
+    background: #4d76a8;
+}
+
+.card-banner-2 {
+    background: #5f82b0;
+}
+
+.card-banner-3 {
+    background: #7092bd;
+}
+
+.card-contenido {
+    padding: 25px;
+}
+
+.card-contenido h2 {
+    color: #0f2b50;
+    font-size: 18px;
+}
+
+.card-contenido p {
+    color: #4d5d78;
+    font-size: 14px;
+}
+
+.card-miembros {
+    color: #5a78a5;
+    font-size: 14px;
+}
+
+.btn-etiqueta {
+    background: #dbe6f5;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-abandonar {
+    width: 100%;
+    background: #dbe6f5;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.btn-abandonar:hover {
+    background: #c2d2e9;
+}
+
+.btn-unirse {
+    width: 100%;
+    background: #324d82;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.btn-unirse:hover {
+    background: #091d36;
+}

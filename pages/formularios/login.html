@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="icon" href="../../imagenes/login.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    
+</head>
+<body>
+    <section class="contenedor-login">
+        <div class="tarjeta-login">
+            <img src="../../imagenes/LogoPrincipal.png" alt="Logo Principal">
+            <h2>Daat Devotional</h2>
+            <p>Inicia Sesión en tu cuenta</p>
+            <div class="formulario-contenedor">
+                <form method="POST" action="../feed/inicio.html">
+                    <label for="Correo">Correo Electrónico</label>
+                    <input type="email" id="Correo" name="Correo"
+                        placeholder="tu@email.com" maxlength="320" minlength="10" required>
+                    <label for="Contrasena">Contraseña</label>
+                    <input type="password" id="Contrasena" name="Contrasena"
+                        placeholder="Ingrese su contraseña" maxlength="8" minlength="8" required>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+            </div>
+            <div class="enlaces-formulario">
+                <p>¿No tienes cuenta? <a href="registro.html"><b>Regístrate aquí</b></a></p>
+                <p><a href="../../index.html">← Volver al inicio</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Daat Devotional - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
