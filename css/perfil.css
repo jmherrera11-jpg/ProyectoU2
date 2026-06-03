@@ -4,64 +4,6 @@ body {
     margin: 0;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav-logo {
-    display: inline-block;
-}
-
-.nav-logo img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50px;
-    vertical-align: middle;
-}
-
-.nav-logo span {
-    font-size: 24px;
-    color: #091d36;
-    font-weight: bold;
-    vertical-align: middle;
-    margin-left: 10px;
-}
-
-.nav-links {
-    margin-left: 60px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #3a4e7a;
-    margin-right: 30px;
-}
-
-.nav-links a:hover {
-    color: #091d36;
-    font-weight: bold;
-}
-
-.nav-usuario {
-    float: right;
-}
-
-.nav-usuario a {
-    text-decoration: none;
-    color: #3a4e7a;
-    font-weight: 600;
-    margin: 0 15px;
-}
-
-.nav-usuario a:hover {
-    color: #091d36;
-}
-
-.nav-salir {
-    color: #5e83ba;
-}
-
 .contenedor-perfil {
     width: 70%;
     margin: 30px auto;
