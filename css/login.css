@@ -1,9 +1,16 @@
 /* Estilos específicos de login.html */
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #c2d2e9;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .contenedor-login {
@@ -12,6 +19,7 @@ body {
     align-items: center;
     padding: 40px 20px 20px 20px;
     width: 100%;
+    flex: 1;
 }
 
 .tarjeta-login {
