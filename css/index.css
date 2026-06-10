@@ -1,11 +1,13 @@
-/* Estilos específicos de index.html - página de bienvenida */
-body {
-    background-color: #c2d2e9;
+/* ============================================================
+   BLOQUE 1: PRESENTACIÓN PRINCIPAL
+   ============================================================ */
+#presentacion {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.logo-principal {
-    text-align: center;
-    margin-top: 30px;
+#bienvenida {
+    background-color: #c2d2e9;
 }
 
 .logo-principal img {
@@ -15,14 +17,12 @@ body {
 }
 
 .titulo-principal {
-    text-align: center;
     font-size: 50px;
     color: #091d36;
     margin-top: 10px;
 }
 
 .subtitulo-principal {
-    text-align: center;
     color: #3a4e7a;
     font-size: 20px;
     margin-top: 10px;
@@ -31,74 +31,65 @@ body {
 .botones {
     display: flex;
     justify-content: center;
-    text-align: center;
+    gap: 20px;
     margin-top: 30px;
 }
 
-.btn-login {
-    width: 120px;
-    height: 50px;
-    background-color: #3a4e7a;
-    color: #f1f1f0;
-    border: 1px solid #091d36;
+.btn-login, .btn-registro {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
     border-radius: 10px;
-    margin: 10px;
     font-family: Poppins, sans-serif;
     font-size: 15px;
     cursor: pointer;
-    white-space: nowrap;
+    transition: transform 0.2s;
+}
+
+.btn-login {
+    background-color: #3a4e7a;
+    color: #f1f1f0;
+    border: 1px solid #091d36;
 }
 
 .btn-login:hover {
     background-color: #091d36;
     transform: scale(1.08);
+    color: #f1f1f0;
 }
 
 .btn-registro {
-    width: 120px;
-    height: 50px;
     background-color: #f1f1f0;
     color: #091d36;
     border: 1px solid #091d36;
-    border-radius: 10px;
-    margin: 10px;
-    font-family: Poppins, sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-    white-space: nowrap;
 }
 
 .btn-registro:hover {
     background-color: #c2d2e9;
     transform: scale(1.08);
+    color: #091d36;
 }
 
-.btn-login,
-.btn-registro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    width: 150px;
-    height: 40px;
-}
-
-.gift-cards {
+/* ============================================================
+   BLOQUE 2: TARJETAS DE SERVICIOS
+   ============================================================ */
+#tarjetas {
     display: flex;
     justify-content: center;
     gap: 35px;
-    margin-top: 40px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .card {
     width: 260px;
     padding: 35px 25px;
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #f1f1f0;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -117,7 +108,39 @@ body {
     font-size: 15px;
 }
 
-.frecuencia {
+.separador {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 40px 0;
+    
+}
+/* ============================================================
+   BLOQUE 3: PREGUNTAS FRECUENTES
+   ============================================================ */
+#preguntas-frecuentes {
     text-align: center;
-    margin-top: 30px;
+    margin: 30px auto;
+}
+
+#preguntas-frecuentes details {
+    margin-top: 15px;
+}
+
+/* ============================================================
+   BLOQUE 4: ESTADÍSTICAS
+   ============================================================ */
+#estadisticas {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#estadisticas progress, #estadisticas meter {
+    width: 300px;
+    height: 25px;
+    accent-color: #3a4e7a;
+}
+
+#estadisticas p {
+    margin: 15px 0 5px;
 }

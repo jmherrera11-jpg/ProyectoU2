@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Inicio Feed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Feed - Daat Devotional</title>
     <link rel="icon" href="../../imagenes/casita.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../css/general.css">
     <link rel="stylesheet" href="../../css/inicio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
     <nav>
-        <span>
+        <div class="nav-logo">
             <img src="../../imagenes/LogoPrincipal.png" alt="Logo">
-            <span>Daat Devotional</span>
-        </span>
-        <span>
-            <a href="inicio.html" title="Inicio"><i class="fa-solid fa-house"></i> Inicio</a>
+            <p>Daat Devotional</p>
+        </div>
+        <div class="nav-links">
+            <a href="inicio.html"><i class="fa-solid fa-house"></i> Inicio</a>
             <a href="grupos.html"><i class="fa-solid fa-users"></i> Grupos</a>
             <a href="foros.html"><i class="fa-solid fa-comments"></i> Foros</a>
             <a href="chat.html"><i class="fa-solid fa-comment-dots"></i> Chat</a>
-        </span>
-        <span>
+        </div>
+        <div class="nav-usuario">
             <a href="../usuario/perfil.html">
                 <i class="fa-solid fa-user"></i> jhon32
             </a>
             <a href="../../index.html" class="nav-salir">
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
             </a>
-        </span>
+        </div>
     </nav>
 
-    <section class="contenedor-feed">
-        <section class="publicar">
-            <img src="../../imagenes/Perfil.png" alt="Perfil">
-            <div class="publicar-form">
-                <textarea placeholder="Comparte tu reflexión bíblica..."></textarea>
-                <br><br>
-                <input type="text" placeholder="Versículo (opcional)">
-                <br><br>
-                <input type="text" placeholder="Referencia (ej: Juan 3:16)">
-                <br><br>
-                <div style="text-align: right;">
-                    <button><i class="fa-solid fa-paper-plane"></i> Publicar</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="publicacion">
-            <div>
+    <main>
+        <section id="feed-publicaciones">
+            <!-- Sección para publicar -->
+            <article class="publicar">
                 <img src="../../imagenes/Perfil.png" alt="Perfil">
-                <span class="publicacion-autor">María González</span>
-                <span class="publicacion-fecha">@maria_g · Hace 2 horas</span>
-            </div>
-            <p>
-                Reflexionando sobre el amor de Dios esta mañana. Este versículo me ha traído mucha paz en tiempos
-                difíciles.
-            </p>
-            <div class="versiculo">
-                <i>
-                    "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito,
-                    para que todo aquel que en él cree, no se pierda, mas tenga vida eterna."
-                </i>
-                <br><br>
-                <b>Juan 3:16</b>
-            </div>
-            <div class="acciones">
-                <span><i class="fa-solid fa-heart"></i> 24</span>
-                <span><i class="fa-regular fa-comment-dots"></i> 8</span>
-                <span><i class="fa-solid fa-location-arrow"></i> Compartir</span>
-            </div>
+                <div class="publicar-form">
+                    <textarea placeholder="Comparte tu reflexión bíblica..."></textarea>
+                    <input type="text" placeholder="Versículo (opcional)">
+                    <input type="text" placeholder="Referencia (ej: Juan 3:16)">
+                    <div class="boton-publicar">
+                        <button><i class="fa-solid fa-paper-plane"></i> Publicar</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Publicación 1 -->
+            <article class="publicacion">
+                <div class="publicacion-header">
+                    <img src="../../imagenes/Perfil.png" alt="Perfil">
+                    <div class="publicacion-autor">
+                        <strong>María González</strong>
+                        <div class="publicacion-fecha">@maria_g · Hace 2 horas</div>
+                    </div>
+                </div>
+                <p>
+                    Reflexionando sobre el amor de Dios esta mañana. Este versículo me ha traído mucha paz en tiempos
+                    difíciles.
+                </p>
+                <div class="versiculo">
+                    <i>
+                        "Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito,
+                        para que todo aquel que en él cree, no se pierda, mas tenga vida eterna."
+                    </i>
+                    <div class="referencia"><b>Juan 3:16</b></div>
+                </div>
+                <div class="acciones">
+                    <div><i class="fa-solid fa-heart"></i> 24</div>
+                    <div><i class="fa-regular fa-comment-dots"></i> 8</div>
+                    <div><i class="fa-solid fa-location-arrow"></i> Compartir</div>
+                </div>
+            </article>
         </section>
-    </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Daat Devotional - Todos los derechos reservados</p>
     </footer>
 </body>
-
 </html>

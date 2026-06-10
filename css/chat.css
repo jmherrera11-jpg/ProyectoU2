@@ -1,7 +1,8 @@
-/* Estilos específicos de chat.html */
-
-.contenedor-chat {
-    width: 86%;
+/* ============================================================
+   BLOQUE 1: CONTENEDOR PRINCIPAL DEL CHAT
+   ============================================================ */
+#chat-principal {
+    width: 100%;
     height: 690px;
     margin: 25px auto;
     background: white;
@@ -11,6 +12,9 @@
     display: flex;
 }
 
+/* ============================================================
+   BLOQUE 2: PANEL IZQUIERDO
+   ============================================================ */
 .panel-izquierdo {
     width: 33%;
     height: 100%;
@@ -32,10 +36,15 @@
     margin: 0 25px 15px;
 }
 
+/* ============================================================
+   BLOQUE 3: CONTACTOS
+   ============================================================ */
 .contacto {
     padding: 20px;
     border-bottom: 1px solid #cfd8e6;
     cursor: pointer;
+    display: flex;
+    gap: 15px;
 }
 
 .contacto:hover {
@@ -50,12 +59,6 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    vertical-align: top;
-}
-
-.contacto-info {
-    display: inline-block;
-    margin-left: 15px;
 }
 
 .contacto-info h3 {
@@ -69,11 +72,14 @@
     font-size: 13px;
 }
 
-.contacto-info span {
+.contacto-info .estado {
     color: #5b7db6;
     font-size: 12px;
 }
 
+/* ============================================================
+   BLOQUE 4: PANEL DERECHO (CHAT ACTIVO)
+   ============================================================ */
 .panel-derecho {
     width: 67%;
     height: 100%;
@@ -84,27 +90,30 @@
 .chat-header {
     padding: 20px;
     border-bottom: 1px solid #d5ddeb;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .chat-header img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    vertical-align: middle;
 }
 
-.chat-header span {
+.chat-titulo .nombre {
     font-size: 22px;
     color: #0f2b50;
-    margin-left: 15px;
 }
 
-.chat-header small {
-    display: block;
-    margin-left: 68px;
+.chat-titulo .estado-header {
     color: #5b7db6;
+    font-size: 12px;
 }
 
+/* ============================================================
+   BLOQUE 5: MENSAJES
+   ============================================================ */
 .mensajes {
     flex: 1;
     padding: 20px;
@@ -120,11 +129,6 @@
     color: #091d36;
 }
 
-.mensaje-recibido span {
-    color: #5b7db6;
-    font-size: 12px;
-}
-
 .mensaje-enviado {
     background: #324d82;
     color: white;
@@ -135,11 +139,19 @@
     margin-bottom: 20px;
 }
 
-.mensaje-enviado span {
-    color: #dbe6f5;
+.hora {
+    color: #5b7db6;
     font-size: 12px;
+    margin-top: 8px;
 }
 
+.mensaje-enviado .hora {
+    color: #dbe6f5;
+}
+
+/* ============================================================
+   BLOQUE 6: INPUT DEL CHAT
+   ============================================================ */
 .chat-input {
     padding: 20px;
     border-top: 1px solid #d5ddeb;

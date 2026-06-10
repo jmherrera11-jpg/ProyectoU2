@@ -1,120 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Pagina Principal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daat Devotional - Inicio</title>
     <link rel="icon" href="imagenes/mundo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   
 </head>
+<body id="bienvenida">
+    <main>
+        <!-- BLOQUE 1: PRESENTACIÓN PRINCIPAL -->
+        <section id="presentacion">
+            <div class="logo-principal">
+                <img src="imagenes/LogoPrincipal.png" alt="Logo Principal">
+            </div>
+            <h1 class="titulo-principal">Daat Devotional</h1>
+            <p class="subtitulo-principal">
+                Red social para el estudio y reflexión bíblica. Conecta, aprende <br>
+                y crece espiritualmente en comunidad.
+            </p>
+            <div class="botones">
+                <a href="pages/formularios/login.html" class="btn-login">Iniciar Sesión</a>
+                <a href="pages/formularios/registro.html" class="btn-registro">Registrarse</a>
+            </div>
+        </section>
 
-<body>
+        <!-- BLOQUE 2: TARJETAS DE INTERESES -->
+        <section id="tarjetas">
+            <article class="card">
+                <img src="imagenes/usuarios.png" alt="Usuarios">
+                <h2>Grupos de estudio</h2>
+                <p>Únete a comunidades dedicadas al estudio profundo de las Escrituras</p>
+            </article>
+            <article class="card">
+                <img src="imagenes/mensaje.png" alt="Foros">
+                <h2>Foros y debates</h2>
+                <p>Participa en discusiones constructivas sobre temas bíblicos</p>
+            </article>
+            <article class="card">
+                <img src="imagenes/biblia.png" alt="Biblia">
+                <h2>Contenido Devocional</h2>
+                <p>Comparte y descubre reflexiones diarias sobre la Palabra</p>
+            </article>
+        </section>
 
-    <section class="logo-principal">
-        <img src="imagenes/LogoPrincipal.png" alt="Logo Principal">
-    </section>
+        <hr class="separador">
 
-    <h1 class="titulo-principal">Daat Devotional</h1>
+        <!-- BLOQUE 3: PREGUNTAS FRECUENTES (USO DE ASIDE) -->
+        <aside id="preguntas-frecuentes">
+            <h2 style="text-align: center;">Preguntas frecuentes</h2>
+            <details>
+                <summary>¿Que es Daat Devotional?</summary>
+                <p>Daat Devotional es una red social enfocada en la divulgación de contenido de estudio bíblico para crecer espiritualmente y mantener una buena coinonia</p>
+            </details>
+            <details>
+                <summary>¿Necesito crear una cuenta para publicar contenido?</summary>
+                <p>Sí, necesitas registrarte e iniciar sesión para compartir reflexiones, comentar publicaciones y participar en grupos o foros.</p>
+            </details>
+            <details>
+                <summary>¿Puedo compartir versículos y referencias bíblicas en mis publicaciones?</summary>
+                <p>Sí, cada usuario puede agregar reflexiones personales, versículos bíblicos y referencias para compartir mensajes de fe con la comunidad.</p>
+            </details>
+        </aside>
 
-    <p class="subtitulo-principal">
-        Red social para el estudio y reflexión bíblica. Conecta, aprende <br>
-        y crece espiritualmente en comunidad.
-    </p>
+        <hr class="separador">
 
-    <section class="botones">
-        <form action="pages/formularios/login.html" method="get" style="display: inline;">
-            <button class="btn-login">Iniciar Sesión</button>
-        </form>
-
-        <form action="pages/formularios/registro.html" style="display: inline;">
-            <button class="btn-registro">Registrarse</button>
-        </form>
-    </section>
-
-    <main class="gift-cards">
-        <div class="card">
-            <img src="imagenes/usuarios.png" alt="Usuarios">
-            <h2>Grupos de estudio</h2>
-            <p>Únete a comunidades dedicadas al estudio profundo de las Escrituras</p>
-        </div>
-
-        <div class="card">
-            <img src="imagenes/mensaje.png" alt="Foros">
-            <h2>Foros y debates</h2>
-            <p>Participa en discusiones constructivas sobre temas bíblicos</p>
-        </div>
-
-        <div class="card">
-            <img src="imagenes/biblia.png" alt="Biblia">
-            <h2>Contenido Devocional</h2>
-            <p>Comparte y descubre reflexiones diarias sobre la Palabra</p>
-        </div>
+        <!-- BLOQUE 4: ESTADÍSTICAS (USO DE ID) -->
+        <section id="estadisticas">
+            <h2>Frecuencia de usuarios y Conocimientos</h2>
+            <p>Conocimientos sobre tecnología</p>
+            <progress value="25" max="100"></progress> <span>25%</span><br>
+            <p>Usuarios que ingresan todos los días</p>
+            <progress value="80" max="100"></progress> <span>80%</span><br>
+            <p>Estudios bíblicos en grupo</p>
+            <progress value="60" max="100"></progress> <span>60%</span>
+            <br><br>
+            <p>Conocimientos sobre tecnología</p>
+            <meter value="25" min="0" max="100"></meter> <span>25%</span><br>
+            <p>Usuarios que ingresan todos los días</p>
+            <meter value="80" min="0" max="100"></meter> <span>80%</span><br>
+            <p>Estudios bíblicos en grupo</p>
+            <meter value="60" min="0" max="100"></meter> <span>60%</span>
+        </section>
     </main>
 
-    <hr>
-    <h2 style="text-align: center; margin-top: 30px;">Preguntas frecuentes</h2>
-
-    <details>
-        <summary>¿Que es Daat Devotional?</summary>
-        <p>Daat Devotional es una red social enfocada en la divulgación de contenido <br>
-            de estudio bíblico para crecer espiritualmente y mantener una buena coinonia</p>
-    </details>
-
-    <details>
-        <summary>¿Necesito crear una cuenta para publicar contenido?</summary>
-        <p>Sí, necesitas registrarte e iniciar sesión para compartir reflexiones, <br>
-            comentar publicaciones y participar en grupos o foros.</p>
-    </details>
-
-    <details>
-        <summary>¿Puedo compartir versículos y referencias bíblicas en mis publicaciones?</summary>
-        <p>Sí, cada usuario puede agregar reflexiones personales, <br> versículos bíblicos y referencias para compartir
-            mensajes de fe con la comunidad.</p>
-    </details>
-
-    <hr>
-    <section class="frecuencia">
-        <h2>Frecuencia de usuarios y Conocimientos</h2>
-        <p>Conocimientos sobre tecnologia</p>
-        <progress title="25%" value="25" max="100"></progress>
-        <span>25%</span>
-        <br>
-        <p>Usuarios que ingresan todos los dias</p>
-        <progress title="80%" value="80" max="100"></progress>
-        <span>80%</span>
-        <br>
-        <p>Estudios biblicos en grupo</p>
-        <progress title="60%" value="60" max="100"></progress>
-        <span>60%</span>
-    </section>
-
-    <hr>
-    <section class="frecuencia">
-        <h2>Frecuencia de usuarios y Conocimientos</h2>
-        <p>Conocimientos sobre tecnologia</p>
-        <meter title="25%" value="25" max="100"></meter>
-        <span>25%</span>
-        <br>
-        <p>Usuarios que ingresan todos los dias</p>
-        <meter title="80%" value="80" max="100"></meter>
-        <span>80%</span>
-        <br>
-        <p>Estudios biblicos en grupo</p>
-        <meter title="60%" value="60" max="100"></meter>
-        <span>60%</span>
-    </section>
-
-    <hr>
     <footer>
         <p>&copy; 2026 Daat Devotional - Todos los derechos reservados</p>
         <p>Estamos ubicados en Santo Domingo de los Tsachilas - Iglesia Biblica Bautista Rey de Vida</p>
-        <a href="https://maps.app.goo.gl/roqSy7ny4ynnwmRu9" target="_blank">
+        <a href="https://maps.app.goo.gl/roqSy7ny4ynnwmRu9" target="_blank" aria-label="Ubicación en mapa">
             <i class="fa-solid fa-map-location-dot"></i>
         </a>
     </footer>
 </body>
-
 </html>

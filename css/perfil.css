@@ -1,14 +1,14 @@
-/* Estilos específicos de perfil.html */
-
-body {
-    margin: 0;
+/* ============================================================
+   BLOQUE 1: PERFIL DE USUARIO
+   ============================================================ */
+#perfil-usuario {
+    width: 100%;
+    margin: 0 auto;
 }
 
-.contenedor-perfil {
-    width: 70%;
-    margin: 30px auto;
-}
-
+/* ============================================================
+   BLOQUE 2: TARJETA DE PERFIL
+   ============================================================ */
 .tarjeta-perfil {
     background-color: white;
     border-radius: 18px;
@@ -53,6 +53,9 @@ body {
     background-color: #091d36;
 }
 
+/* ============================================================
+   BLOQUE 3: INFORMACIÓN GENERAL DEL PERFIL
+   ============================================================ */
 .info-general {
     margin-top: 55px;
 }
@@ -64,13 +67,13 @@ body {
     text-align: left;
 }
 
-.info-general p {
+.info-general .usuario {
     margin-top: 5px;
     color: #5e83ba;
     font-size: 18px;
 }
 
-.info-general p.bio {
+.info-general .bio {
     margin-top: 20px;
     color: #3a4e7a;
     line-height: 28px;
@@ -78,39 +81,42 @@ body {
 }
 
 .info-enlaces {
+    display: flex;
+    gap: 30px;
     margin-top: 20px;
     color: #5e83ba;
     font-size: 14px;
 }
 
-.info-enlaces span {
-    margin-right: 30px;
-}
-
 .info-seguimiento {
+    display: flex;
+    gap: 60px;
     margin-top: 30px;
     padding-top: 25px;
     border-top: 1px solid #c2d2e9;
-    font-size: 14px;
 }
 
-.info-seguimiento span {
-    margin-right: 60px;
+.stat {
+    text-align: center;
 }
 
 .stat-label {
     color: #5e83ba;
+    font-size: 14px;
 }
 
 .stat-valor {
     font-size: 20px;
     color: #091d36;
     font-weight: bold;
-    margin-left: 5px;
 }
 
+/* ============================================================
+   BLOQUE 4: PUBLICACIONES DEL PERFIL
+   ============================================================ */
 .publicaciones-perfil {
-    margin-top: 30px;
+    width: 100%;
+    margin: 30px auto;
     background-color: white;
     border-radius: 18px;
     padding: 25px;
@@ -148,44 +154,48 @@ body {
     margin-top: 0;
 }
 
-.post-versiculo span {
+.post-versiculo .referencia {
     color: #3a4e7a;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 .acciones-post {
+    display: flex;
+    gap: 25px;
     margin-top: 20px;
     color: #5e83ba;
 }
 
-.acciones-post span {
-    margin-right: 25px;
-}
-
-.acciones-post span:hover {
-    color: #091d36;
+.acciones-post div {
     cursor: pointer;
 }
 
-.fotos-seccion {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+.acciones-post div:hover {
+    color: #091d36;
 }
 
-.fotos-seccion h2 {
+/* ============================================================
+   BLOQUE 5: GALERÍA DE FOTOS
+   ============================================================ */
+#galeria-fotos {
+    width: 100%;
+    margin: 30px auto;
     text-align: center;
 }
 
-table {
-    border: 1px solid #c2d2e9;
+#galeria-fotos h2 {
+    margin-bottom: 20px;
 }
 
-table td {
-    padding: 5px;
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
 }
 
-table td img {
+.galeria img {
     border-radius: 8px;
-    max-width: 300px;
+    object-fit: cover;
 }

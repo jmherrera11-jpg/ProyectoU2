@@ -1,20 +1,26 @@
-/* Estilos específicos de grupos.html */
-
-.contenedor-grupos {
-    width: 82%;
-    margin: 40px auto;
+/* ============================================================
+   BLOQUE 1: CONTENEDOR PRINCIPAL DE GRUPOS
+   ============================================================ */
+#grupos-estudio {
+    width: 100%;
+    margin: 0 auto;
 }
 
+/* ============================================================
+   BLOQUE 2: TÍTULO Y BOTONES
+   ============================================================ */
 .titulo-seccion {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .titulo-seccion h1 {
     color: #0f2b50;
     font-size: 32px;
     text-align: left;
+    margin: 0;
 }
 
 .btn-crear {
@@ -31,11 +37,13 @@
     background: #091d36;
 }
 
+/* ============================================================
+   BLOQUE 3: BUSCADOR Y FILTROS
+   ============================================================ */
 .buscador {
     background: white;
     padding: 25px;
     border-radius: 18px;
-    margin-top: 25px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -57,6 +65,7 @@
     border-radius: 10px;
     cursor: pointer;
     margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 .menu-filtro button:hover {
@@ -74,20 +83,21 @@
     color: #1f2d4d;
 }
 
+/* ============================================================
+   BLOQUE 4: TARJETAS DE GRUPOS
+   ============================================================ */
 .tarjetas {
-    margin-top: 30px;
     display: flex;
     gap: 2%;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .card-grupo {
-    display: inline-block;
     width: 31%;
     background: white;
     border-radius: 18px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-    vertical-align: top;
     margin-bottom: 20px;
 }
 
@@ -96,17 +106,9 @@
     border-radius: 18px 18px 0 0;
 }
 
-.card-banner-1 {
-    background: #4d76a8;
-}
-
-.card-banner-2 {
-    background: #5f82b0;
-}
-
-.card-banner-3 {
-    background: #7092bd;
-}
+.card-banner-1 { background: #4d76a8; }
+.card-banner-2 { background: #5f82b0; }
+.card-banner-3 { background: #7092bd; }
 
 .card-contenido {
     padding: 25px;
@@ -115,6 +117,7 @@
 .card-contenido h2 {
     color: #0f2b50;
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .card-contenido p {
@@ -125,6 +128,7 @@
 .card-miembros {
     color: #5a78a5;
     font-size: 14px;
+    margin: 10px 0;
 }
 
 .btn-etiqueta {
@@ -134,17 +138,21 @@
     border-radius: 20px;
     font-size: 13px;
     cursor: pointer;
+    margin: 10px 0;
 }
 
-.btn-abandonar {
+.btn-abandonar, .btn-unirse {
     width: 100%;
-    background: #dbe6f5;
-    border: none;
     padding: 14px;
     border-radius: 10px;
     font-size: 16px;
     margin-top: 12px;
     cursor: pointer;
+}
+
+.btn-abandonar {
+    background: #dbe6f5;
+    border: none;
 }
 
 .btn-abandonar:hover {
@@ -152,15 +160,9 @@
 }
 
 .btn-unirse {
-    width: 100%;
     background: #324d82;
     color: white;
     border: none;
-    padding: 14px;
-    border-radius: 10px;
-    font-size: 16px;
-    margin-top: 12px;
-    cursor: pointer;
 }
 
 .btn-unirse:hover {

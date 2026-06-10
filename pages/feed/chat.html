@@ -2,102 +2,100 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Daat Devotional</title>
     <link rel="icon" href="../../imagenes/chat.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../css/general.css">
     <link rel="stylesheet" href="../../css/chat.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        
-    </style>
 </head>
-
 <body>
     <nav>
-        <span class="nav-logo">
+        <div class="nav-logo">
             <img src="../../imagenes/LogoPrincipal.png" alt="Logo">
-            <span>Daat Devotional</span>
-        </span>
-        <span class="nav-links">
+            <div>Daat Devotional</div>
+        </div>
+        <div class="nav-links">
             <a href="inicio.html"><i class="fa-solid fa-house"></i> Inicio</a>
             <a href="grupos.html"><i class="fa-solid fa-users"></i> Grupos</a>
             <a href="foros.html"><i class="fa-solid fa-comments"></i> Foros</a>
             <a href="chat.html"><i class="fa-solid fa-comment-dots"></i> Chat</a>
-        </span>
-        <span class="nav-usuario">
+        </div>
+        <div class="nav-usuario">
             <a href="../usuario/perfil.html">
                 <i class="fa-solid fa-user"></i> jhon32
             </a>
             <a href="../../index.html" class="nav-salir">
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
             </a>
-        </span>
+        </div>
     </nav>
 
-    <section class="contenedor-chat">
-        <div class="panel-izquierdo">
-            <h2>Mensajes</h2>
-            <input type="text" placeholder="Buscar conversaciones...">
+    <main>
+        <section id="chat-principal">
+            <div class="panel-izquierdo">
+                <h2>Mensajes</h2>
+                <input type="text" placeholder="Buscar conversaciones...">
 
-            <div class="contacto contacto-activo">
-                <img src="../../imagenes/Perfil.png" alt="Perfil">
-                <div class="contacto-info">
-                    <h3>Pastor David</h3>
-                    <p>Excelente reflexión sobre Romanos 8</p>
-                    <span>En línea</span>
+                <div class="contacto contacto-activo">
+                    <img src="../../imagenes/Perfil.png" alt="Perfil">
+                    <div class="contacto-info">
+                        <h3>Pastor David</h3>
+                        <p>Excelente reflexión sobre Romanos 8</p>
+                        <div class="estado">En línea</div>
+                    </div>
+                </div>
+
+                <div class="contacto">
+                    <img src="../../imagenes/Perfil.png" alt="Perfil">
+                    <div class="contacto-info">
+                        <h3>María González</h3>
+                        <p>¿Podrías compartir ese estudio?</p>
+                        <div class="estado">Hace 2h</div>
+                    </div>
+                </div>
+
+                <div class="contacto">
+                    <img src="../../imagenes/Perfil.png" alt="Perfil">
+                    <div class="contacto-info">
+                        <h3>Ana Martínez</h3>
+                        <p>Gracias por la recomendación</p>
+                        <div class="estado">Hace 1 día</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="contacto">
-                <img src="../../imagenes/Perfil.png" alt="Perfil">
-                <div class="contacto-info">
-                    <h3>María González</h3>
-                    <p>¿Podrías compartir ese estudio?</p>
-                    <span>Hace 2h</span>
+            <div class="panel-derecho">
+                <div class="chat-header">
+                    <img src="../../imagenes/Perfil.png" alt="Perfil">
+                    <div class="chat-titulo">
+                        <div class="nombre">Pastor David</div>
+                        <div class="estado-header">En línea</div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="contacto">
-                <img src="../../imagenes/Perfil.png" alt="Perfil">
-                <div class="contacto-info">
-                    <h3>Ana Martínez</h3>
-                    <p>Gracias por la recomendación</p>
-                    <span>Hace 1 día</span>
+                <div class="mensajes">
+                    <div class="mensaje-recibido">
+                        Hola! Vi tu publicación sobre Romanos 8. Muy interesante perspectiva.
+                        <div class="hora">10:00 AM</div>
+                    </div>
+                    <div class="mensaje-enviado">
+                        Muchas gracias! Es un pasaje muy profundo.
+                        <div class="hora">10:15 AM</div>
+                    </div>
+                    <div class="mensaje-recibido">
+                        Excelente reflexión sobre Romanos 8
+                        <div class="hora">10:30 AM</div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="panel-derecho">
-            <div class="chat-header">
-                <img src="../../imagenes/Perfil.png" alt="Perfil">
-                <span>Pastor David</span>
-                <small>En línea</small>
-            </div>
-
-            <div class="mensajes">
-                <div class="mensaje-recibido">
-                    Hola! Vi tu publicación sobre Romanos 8. Muy interesante perspectiva.
-                    <br><br>
-                    <span>10:00 AM</span>
-                </div>
-                <div class="mensaje-enviado">
-                    Muchas gracias! Es un pasaje muy profundo.
-                    <br><br>
-                    <span>10:15 AM</span>
-                </div>
-                <div class="mensaje-recibido">
-                    Excelente reflexión sobre Romanos 8
-                    <br><br>
-                    <span>10:30 AM</span>
+                <div class="chat-input">
+                    <input type="text" placeholder="Escribe un mensaje...">
+                    <button><i class="fa-solid fa-location-arrow"></i> Enviar</button>
                 </div>
             </div>
-
-            <div class="chat-input">
-                <input type="text" placeholder="Escribe un mensaje...">
-                <button><i class="fa-solid fa-location-arrow"></i> Enviar</button>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Daat Devotional - Todos los derechos reservados</p>

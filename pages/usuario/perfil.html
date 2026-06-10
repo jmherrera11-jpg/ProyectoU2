@@ -1,119 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Perfil de Usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Daat Devotional</title>
     <link rel="icon" href="../../imagenes/perfil.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../css/general.css">
     <link rel="stylesheet" href="../../css/perfil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
     <nav>
-        <span class="nav-logo">
+        <div class="nav-logo">
             <img src="../../imagenes/LogoPrincipal.png" alt="Logo">
-            <span>Daat Devotional</span>
-        </span>
-        <span class="nav-links">
+            <div>Daat Devotional</div>
+        </div>
+        <div class="nav-links">
             <a href="../feed/inicio.html"><i class="fa-solid fa-house"></i> Inicio</a>
             <a href="../feed/grupos.html"><i class="fa-solid fa-users"></i> Grupos</a>
             <a href="../feed/foros.html"><i class="fa-solid fa-comments"></i> Foros</a>
             <a href="../feed/chat.html"><i class="fa-solid fa-comment-dots"></i> Chat</a>
-        </span>
-        <span class="nav-usuario">
-            <a href="../usuario/perfil.html">
+        </div>
+        <div class="nav-usuario">
+            <a href="perfil.html">
                 <i class="fa-solid fa-user"></i> jhon32
             </a>
             <a href="../../index.html" class="nav-salir">
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
             </a>
-        </span>
+        </div>
     </nav>
 
-    <section class="contenedor-perfil">
-        <div class="tarjeta-perfil">
-            <div class="banner-perfil"></div>
-            <section class="perfil-info">
-                <img src="../../imagenes/Perfil.png" alt="Perfil">
-                <button class="btn-editar">Editar Perfil</button>
+    <main>
+        <section id="perfil-usuario">
+            <div class="tarjeta-perfil">
+                <div class="banner-perfil"></div>
+                <div class="perfil-info">
+                    <img src="../../imagenes/Perfil.png" alt="Perfil">
+                    <button class="btn-editar">Editar Perfil</button>
 
-                <div class="info-general">
-                    <h1>jhon32</h1>
-                    <p>@jhon32</p>
-                    <p class="bio">Estudiante de la Palabra, apasionado por el estudio bíblico profundo.</p>
+                    <div class="info-general">
+                        <h1>jhon32</h1>
+                        <div class="usuario">@jhon32</div>
+                        <div class="bio">Estudiante de la Palabra, apasionado por el estudio bíblico profundo.</div>
 
-                    <div class="info-enlaces">
-                        <span><i class="fa-solid fa-calendar-days"></i> Se unió en Enero 2026</span>
-                        <span><i class="fa-solid fa-globe"></i> En todo el mundo</span>
-                    </div>
+                        <div class="info-enlaces">
+                            <div><i class="fa-solid fa-calendar-days"></i> Se unió en Enero 2026</div>
+                            <div><i class="fa-solid fa-globe"></i> En todo el mundo</div>
+                        </div>
 
-                    <div class="info-seguimiento">
-                        <span>
-                            <span class="stat-label">Publicaciones</span>
-                            <span class="stat-valor">24</span>
-                        </span>
-                        <span>
-                            <span class="stat-label">Seguidores</span>
-                            <span class="stat-valor">156</span>
-                        </span>
-                        <span>
-                            <span class="stat-label">Siguiendo</span>
-                            <span class="stat-valor">89</span>
-                        </span>
+                        <div class="info-seguimiento">
+                            <div class="stat">
+                                <div class="stat-label">Publicaciones</div>
+                                <div class="stat-valor">24</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-label">Seguidores</div>
+                                <div class="stat-valor">156</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-label">Siguiendo</div>
+                                <div class="stat-valor">89</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
         <section class="publicaciones-perfil">
             <h2>Mis Publicaciones</h2>
 
-            <div class="post">
-                <p>La paz de Dios sobrepasa todo entendimiento.
-                    Hoy decidí confiar más en Su plan que en mis propios planes.</p>
+            <article class="post">
+                <p>La paz de Dios sobrepasa todo entendimiento. Hoy decidí confiar más en Su plan que en mis propios planes.</p>
                 <div class="post-versiculo">
-                    <p>"Y la paz de Dios, que sobrepasa todo entendimiento, guardará vuestros
-                        corazones y vuestros pensamientos en Cristo Jesús."</p>
-                    <span>Filipenses 4:7</span>
+                    <p>"Y la paz de Dios, que sobrepasa todo entendimiento, guardará vuestros corazones y vuestros pensamientos en Cristo Jesús."</p>
+                    <div class="referencia">Filipenses 4:7</div>
                 </div>
                 <div class="acciones-post">
-                    <span><i class="fa-solid fa-heart"></i> 24</span>
-                    <span><i class="fa-regular fa-comment-dots"></i> 8</span>
-                    <span><i class="fa-solid fa-location-arrow"></i> Compartir</span>
+                    <div><i class="fa-solid fa-heart"></i> 24</div>
+                    <div><i class="fa-regular fa-comment-dots"></i> 8</div>
+                    <div><i class="fa-solid fa-location-arrow"></i> Compartir</div>
                 </div>
-            </div>
+            </article>
 
-            <div class="post">
-                <p>Cada día es una nueva oportunidad para acercarnos más a Dios
-                    y fortalecer nuestra fe.</p>
+            <article class="post">
+                <p>Cada día es una nueva oportunidad para acercarnos más a Dios y fortalecer nuestra fe.</p>
                 <div class="acciones-post">
-                    <span><i class="fa-solid fa-heart"></i> 24</span>
-                    <span><i class="fa-regular fa-comment-dots"></i> 8</span>
-                    <span><i class="fa-solid fa-location-arrow"></i> Compartir</span>
+                    <div><i class="fa-solid fa-heart"></i> 24</div>
+                    <div><i class="fa-regular fa-comment-dots"></i> 8</div>
+                    <div><i class="fa-solid fa-location-arrow"></i> Compartir</div>
                 </div>
+            </article>
+        </section>
+
+        <section id="galeria-fotos">
+            <h2>Fotos Subidas</h2>
+            <div class="galeria">
+                <img src="../../imagenes/Snoppy.jpg" height="200" width="200" alt="Foto 1">
+                <img src="../../imagenes/atardecer1.jpg" height="200" width="200" alt="Foto 2">
+                <img src="../../imagenes/atardecer1.jpg" height="200" width="200" alt="Foto 3">
+                <img src="../../imagenes/atardecer1.jpg" height="200" width="200" alt="Foto 4">
+                <img src="../../imagenes/atardecer1.jpg" height="200" width="200" alt="Foto 5">
+                <img src="../../imagenes/atardecer1.jpg" height="200" width="200" alt="Foto 6">
             </div>
         </section>
-    </section>
-
-    <section class="fotos-seccion">
-        <div>
-            <h2>Fotos Subidas</h2>
-            <table border="1">
-                <tr>
-                    <td><img src="../../imagenes/Snoppy.jpg" height="400" width="300" alt="Foto 1"></td>
-                    <td><img src="../../imagenes/atardecer1.jpg" height="400" width="300" alt="Foto 2"></td>
-                    <td><img src="../../imagenes/atardecer1.jpg" alt="Foto 3"></td>
-                </tr>
-                <tr>
-                    <td><img src="../../imagenes/atardecer1.jpg" alt="Foto 4"></td>
-                    <td><img src="../../imagenes/atardecer1.jpg" alt="Foto 5"></td>
-                    <td><img src="../../imagenes/atardecer1.jpg" alt="Foto 6"></td>
-                </tr>
-            </table>
-        </div>
-    </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Daat Devotional - Todos los derechos reservados</p>

@@ -1,20 +1,26 @@
-/* Estilos específicos de foros.html */
-
-.contenedor-foros {
-    width: 84%;
-    margin: 35px auto;
+/* ============================================================
+   BLOQUE 1: CONTENEDOR PRINCIPAL DE FOROS
+   ============================================================ */
+#lista-temas {
+    width: 100%;
+    margin: 0 auto;
 }
 
+/* ============================================================
+   BLOQUE 2: TÍTULO Y BOTONES
+   ============================================================ */
 .titulo-seccion {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .titulo-seccion h1 {
     color: #0f2b50;
     font-size: 32px;
     text-align: left;
+    margin: 0;
 }
 
 .btn-nuevo {
@@ -31,11 +37,13 @@
     background: #091d36;
 }
 
+/* ============================================================
+   BLOQUE 3: BUSCADOR Y FILTROS
+   ============================================================ */
 .buscador {
     background: white;
     padding: 25px;
     border-radius: 18px;
-    margin-top: 25px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -74,25 +82,31 @@
     background: #dbe6f5;
 }
 
+/* ============================================================
+   BLOQUE 4: TEMAS DEL FORO
+   ============================================================ */
 .tema {
     background: white;
     border: 2px solid #5b7db6;
     border-radius: 18px;
     padding: 25px;
     margin-top: 30px;
+    display: flex;
+    gap: 15px;
 }
 
 .tema img {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    vertical-align: top;
 }
 
 .tema-contenido {
-    display: inline-block;
-    width: 90%;
-    margin-left: 15px;
+    flex: 1;
+}
+
+.etiquetas {
+    margin-bottom: 10px;
 }
 
 .btn-etiqueta {
@@ -106,9 +120,9 @@
 }
 
 .tema-contenido h2 {
-    margin-top: 15px;
     color: #0f2b50;
     font-size: 18px;
+    margin: 10px 0;
 }
 
 .tema-contenido p {
@@ -119,4 +133,5 @@
 .tema-meta {
     color: #5a78a5;
     font-size: 13px;
+    margin-top: 10px;
 }
