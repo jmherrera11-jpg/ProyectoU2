@@ -73,74 +73,160 @@
 }
 
 /* ============================================================
-   BLOQUE 2: TARJETAS DE SERVICIOS
+   BLOQUE 2: TARJETAS DE SERVICIOS CON FLEXBOX MEJORADO
    ============================================================ */
 #tarjetas {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     gap: 35px;
     flex-wrap: wrap;
     margin-top: 40px;
 }
 
 .card {
-    width: 260px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
     padding: 35px 25px;
     text-align: center;
     background-color: #f1f1f0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(58, 78, 122, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: #3a4e7a;
 }
 
 .card img {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
     color: #091d36;
-    font-size: 18px;
+    font-size: 20px;
+    margin: 15px 0 10px;
 }
 
 .card p {
     color: #3a4e7a;
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
 }
 
-.separador {
-    width: 100%;
-    height: 1px;
-    background-color: #ddd;
-    margin: 40px 0;
-    
-}
 /* ============================================================
-   BLOQUE 3: PREGUNTAS FRECUENTES
+   BLOQUE 3: PREGUNTAS FRECUENTES MEJORADO
    ============================================================ */
 #preguntas-frecuentes {
-    text-align: center;
+    text-align: left;
     margin: 30px auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#preguntas-frecuentes h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0f2b50;
 }
 
 #preguntas-frecuentes details {
     margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #f8f9fc;
+    border-radius: 12px;
+    border-left: 4px solid #3a4e7a;
+}
+
+#preguntas-frecuentes summary {
+    font-weight: bold;
+    color: #0f2b50;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+#preguntas-frecuentes details p {
+    margin-top: 12px;
+    padding-left: 20px;
+    color: #4d5d78;
 }
 
 /* ============================================================
-   BLOQUE 4: ESTADÍSTICAS
+   BLOQUE 4: ESTADÍSTICAS MEJORADO
    ============================================================ */
 #estadisticas {
     text-align: center;
     margin: 30px auto;
+    background: linear-gradient(135deg, #f1f1f0 0%, #e8ecf2 100%);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#estadisticas h2 {
+    margin-bottom: 25px;
+    color: #0f2b50;
 }
 
 #estadisticas progress, #estadisticas meter {
-    width: 300px;
-    height: 25px;
-    accent-color: #3a4e7a;
+    width: 100%;
+    height: 15%;
+    border-radius: 12px;
+}
+
+#estadisticas progress::-webkit-progress-bar {
+    background-color: #e0e5ec;
+    border-radius: 12px;
+}
+
+#estadisticas progress::-webkit-progress-value {
+    background-color: #3a4e7a;
+    border-radius: 12px;
+}
+
+#estadisticas meter::-webkit-meter-bar {
+    background-color: #e0e5ec;
+    border-radius: 12px;
+}
+
+#estadisticas meter::-webkit-meter-optimum-value {
+    background-color: #27ae60;
+    border-radius: 12px;
 }
 
 #estadisticas p {
-    margin: 15px 0 5px;
+    margin: 20px 0 8px;
+    font-weight: 500;
+    color: #0f2b50;
+}
+
+/* Grupo de estadísticas */
+.grupo-estadisticas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.item-estadistica {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
